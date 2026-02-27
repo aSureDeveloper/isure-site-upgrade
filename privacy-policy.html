@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | iSure Myanmar</title>
+  <meta name="description" content="Privacy Policy for iSure Myanmar (isuremyanmar.com)" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1620;
+      --text:#e8eef6;
+      --muted:#a7b3c2;
+      --line:#223041;
+      --accent:#7dd3fc;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 980px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(125,211,252,.18), transparent 60%),
+        radial-gradient(900px 500px at 110% 20%, rgba(167,139,250,.12), transparent 55%),
+        linear-gradient(180deg, var(--bg), #070a0e 70%);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{color:inherit; text-decoration: underline; text-underline-offset: 3px}
+    a:hover{color:var(--accent)}
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 16px 72px;
+    }
+
+    /* Header */
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding: 14px 2px 22px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .brand .site{
+      font-weight: 700;
+      letter-spacing:.2px;
+      font-size: 16px;
+      opacity:.95;
+    }
+    .brand .crumb{
+      color:var(--muted);
+      font-size: 13px;
+    }
+
+    .tools{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .pill strong{color:var(--text); font-weight:600}
+
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      padding: 9px 12px;
+      border-radius: 999px;
+      cursor:pointer;
+      font-size: 13px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{background: rgba(255,255,255,.07); border-color: rgba(125,211,252,.35)}
+    .btn:active{transform: translateY(1px)}
+
+    /* Layout */
+    .hero{
+      margin-top: 8px;
+      border:1px solid rgba(255,255,255,.06);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+    }
+
+    h1{
+      margin: 0 0 8px;
+      font-size: clamp(26px, 3.4vw, 38px);
+      letter-spacing: -0.02em;
+      line-height: 1.18;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      color: var(--muted);
+      font-size: 13.5px;
+      margin-top: 10px;
+      align-items:center;
+    }
+
+    .note{
+      border:1px solid rgba(125,211,252,.22);
+      background: rgba(125,211,252,.07);
+      padding: 12px 12px;
+      border-radius: 14px;
+      color: rgba(232,238,246,.92);
+      margin-top: 10px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    @media (min-width: 960px){
+      .grid{
+        grid-template-columns: 280px 1fr;
+        align-items:start;
+      }
+    }
+
+    /* TOC */
+    .toc{
+      position: relative;
+      border:1px solid rgba(255,255,255,.06);
+      background: rgba(15,22,32,.6);
+      border-radius: var(--radius);
+      padding: 14px 14px 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+    }
+    @media (min-width: 960px){
+      .toc{ position: sticky; top: 14px; }
+    }
+    .toc h2{
+      font-size: 13px;
+      margin: 0 0 10px;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .toc a{
+      display:block;
+      padding: 9px 10px;
+      border-radius: 12px;
+      text-decoration:none;
+      color: var(--text);
+      border:1px solid transparent;
+      transition: background .15s ease, border-color .15s ease;
+      font-size: 14px;
+    }
+    .toc a:hover{
+      background: rgba(125,211,252,.08);
+      border-color: rgba(125,211,252,.25);
+    }
+    .toc .small{
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-top: 8px;
+      padding: 0 10px 6px;
+    }
+
+    /* Content */
+    .content{
+      border:1px solid rgba(255,255,255,.06);
+      background: rgba(15,22,32,.45);
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+    }
+
+    .section{
+      padding: 14px 8px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .section:last-child{border-bottom:none}
+
+    h3{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+      line-height:1.25;
+    }
+
+    p{margin: 10px 0; color: rgba(232,238,246,.92)}
+    ul{margin: 10px 0 0 18px; padding: 0}
+    li{margin: 8px 0; color: rgba(232,238,246,.92)}
+
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border:1px solid rgba(255,255,255,.15);
+      border-bottom-color: rgba(255,255,255,.08);
+      border-radius: 8px;
+      background: rgba(255,255,255,.04);
+      color: rgba(232,238,246,.92);
+      white-space:nowrap;
+    }
+
+    /* Print */
+    @media print{
+      body{ background:#fff; color:#111 }
+      .hero, .toc, .content{ box-shadow:none; background:#fff; border:1px solid #ddd }
+      .btn{ display:none }
+      a{ color:#111; text-decoration:none }
+      .meta{ color:#444 }
+      .toc{ position: static }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="site">iSure Myanmar</div>
+        <div class="crumb">isuremyanmar.com / privacy-policy</div>
+      </div>
+
+      <div class="tools">
+        <div class="pill"><strong>Last updated</strong><span>•</span><span>27 Feb 2026</span></div>
+        <button class="btn" onclick="window.print()" type="button">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <header class="hero">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <span>This policy explains how we collect, use, and protect your personal information.</span>
+      </div>
+      <div class="note" role="note" aria-label="Important note">
+        If you do not agree with this Privacy Policy, please do not use our Services.
+      </div>
+    </header>
+
+    <main class="grid" aria-label="Privacy Policy content">
+      <aside class="toc" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <a href="#overview">1. Overview</a>
+        <a href="#info">2. Information We Collect</a>
+        <a href="#how">3. How We Use Information</a>
+        <a href="#sharing">4. Sharing &amp; Disclosure</a>
+        <a href="#cookies">5. Cookies &amp; Tracking</a>
+        <a href="#security">6. Data Security</a>
+        <a href="#retention">7. Data Retention</a>
+        <a href="#rights">8. Your Rights &amp; Choices</a>
+        <a href="#children">9. Children’s Privacy</a>
+        <a href="#international">10. Cross-Border Transfers</a>
+        <a href="#changes">11. Changes to This Policy</a>
+        <a href="#contact">12. Contact</a>
+        <div class="small">
+          Tip: Use <span class="kbd">Ctrl</span> + <span class="kbd">F</span> (or <span class="kbd">⌘</span> + <span class="kbd">F</span>) to search.
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="section" id="overview">
+          <h3>1) Overview</h3>
+          <p>
+            This Privacy Policy describes how <strong>iSure Myanmar</strong> (“iSure”, “we”, “us”, “our”) collects, uses, discloses,
+            and protects personal information when you visit or use <strong>isuremyanmar.com</strong> and related services (the “Services”).
+          </p>
+          <p>
+            “Personal information” means information that identifies you or can reasonably be linked to you (e.g., name, phone number, email, address).
+          </p>
+        </div>
+
+        <div class="section" id="info">
+          <h3>2) Information We Collect</h3>
+          <p>We may collect the following categories of information:</p>
+          <ul>
+            <li><strong>Contact details:</strong> name, phone number, email address, delivery address, and similar details.</li>
+            <li><strong>Account information (if applicable):</strong> username, account preferences, and related profile details.</li>
+            <li><strong>Order and transaction information:</strong> items purchased, order history, payment confirmation, delivery details, and support requests.</li>
+            <li><strong>Device and usage data:</strong> IP address, browser type, device identifiers, pages visited, and timestamps (often collected via cookies or analytics tools).</li>
+            <li><strong>Communications:</strong> messages you send us via forms, chat, email, social media, or phone.</li>
+            <li><strong>Optional marketing data:</strong> campaign responses, promo code usage, and subscription preferences.</li>
+          </ul>
+          <div class="note">
+            We do not intentionally collect sensitive personal data (such as health or biometric data) through this website unless you choose to provide it.
+          </div>
+        </div>
+
+        <div class="section" id="how">
+          <h3>3) How We Use Information</h3>
+          <p>We use personal information to:</p>
+          <ul>
+            <li>provide and operate the Services, including processing orders and delivering products;</li>
+            <li>communicate with you about orders, support, updates, and important notices;</li>
+            <li>verify identity and prevent fraud, misuse, or unauthorized access;</li>
+            <li>improve our website, products, and customer experience (e.g., analytics, troubleshooting);</li>
+            <li>send marketing messages (only where permitted and based on your preferences/consent);</li>
+            <li>comply with legal obligations and enforce our Terms &amp; Conditions.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="sharing">
+          <h3>4) Sharing &amp; Disclosure</h3>
+          <p>We may share information with:</p>
+          <ul>
+            <li><strong>Service providers:</strong> payment processors, delivery partners, hosting providers, analytics tools, and customer support tools.</li>
+            <li><strong>Business partners (if applicable):</strong> for joint promotions or fulfillment, only as needed and subject to appropriate safeguards.</li>
+            <li><strong>Legal and safety:</strong> where required by law, court order, or to protect rights, safety, and prevent fraud.</li>
+            <li><strong>Business changes:</strong> in a merger, acquisition, or asset sale, information may be transferred as part of the transaction.</li>
+          </ul>
+          <p>We do not sell your personal information as a business model.</p>
+        </div>
+
+        <div class="section" id="cookies">
+          <h3>5) Cookies &amp; Tracking</h3>
+          <p>
+            We may use cookies and similar technologies to operate the site, remember preferences, measure performance, and understand usage.
+          </p>
+          <ul>
+            <li><strong>Essential cookies:</strong> required for site functionality (e.g., security, session management).</li>
+            <li><strong>Analytics cookies:</strong> help us understand how the site is used so we can improve it.</li>
+            <li><strong>Marketing cookies (if used):</strong> may help measure ads and deliver more relevant promotions.</li>
+          </ul>
+          <p>
+            You can control cookies through your browser settings. Note that disabling certain cookies may affect site functionality.
+          </p>
+        </div>
+
+        <div class="section" id="security">
+          <h3>6) Data Security</h3>
+          <p>
+            We use reasonable administrative, technical, and physical safeguards designed to protect your information.
+            However, no method of transmission or storage is completely secure, so we cannot guarantee absolute security.
+          </p>
+        </div>
+
+        <div class="section" id="retention">
+          <h3>7) Data Retention</h3>
+          <p>
+            We retain personal information only as long as necessary for the purposes described in this Policy,
+            including providing Services, complying with legal requirements, resolving disputes, and enforcing agreements.
+          </p>
+        </div>
+
+        <div class="section" id="rights">
+          <h3>8) Your Rights &amp; Choices</h3>
+          <p>Depending on your location and applicable laws, you may have the right to:</p>
+          <ul>
+            <li>request access to your personal information;</li>
+            <li>request correction of inaccurate information;</li>
+            <li>request deletion (where applicable);</li>
+            <li>opt out of marketing communications at any time (via unsubscribe links or by contacting us).</li>
+          </ul>
+          <p>
+            To make a request, contact us using the details in Section 12. We may need to verify your identity before responding.
+          </p>
+        </div>
+
+        <div class="section" id="children">
+          <h3>9) Children’s Privacy</h3>
+          <p>
+            Our Services are not directed to children under <strong>13</strong> (or the age required by local law).
+            We do not knowingly collect personal information from children.
+          </p>
+        </div>
+
+        <div class="section" id="international">
+          <h3>10) Cross-Border Transfers</h3>
+          <p>
+            Your information may be processed and stored in countries other than where you live, including where our service providers operate.
+            We take steps to ensure appropriate safeguards are in place when transferring information.
+          </p>
+        </div>
+
+        <div class="section" id="changes">
+          <h3>11) Changes to This Policy</h3>
+          <p>
+            We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised “Last updated” date.
+            Your continued use of the Services after changes means you accept the updated Policy.
+          </p>
+        </div>
+
+        <div class="section" id="contact">
+          <h3>12) Contact</h3>
+          <p>If you have questions or requests about this Privacy Policy, contact us:</p>
+          <ul>
+            <li><strong>iSure Myanmar</strong></li>
+            <li>Email: <a href="mailto:hello@sure.com.mm">hello@sure.com.mm</a> (change if needed)</li>
+            <li>Phone: <strong>09880441122</strong></li>
+            <li>Address: <strong>Yangon</strong></li>
+          </ul>
+          <div class="note">
+            Related page: <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
