@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms & Conditions | iSure Myanmar</title>
+  <meta name="description" content="Terms & Conditions for iSure Myanmar (isuremyanmar.com)" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1620;
+      --text:#e8eef6;
+      --muted:#a7b3c2;
+      --line:#223041;
+      --accent:#7dd3fc;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 980px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(125,211,252,.18), transparent 60%),
+        radial-gradient(900px 500px at 110% 20%, rgba(167,139,250,.12), transparent 55%),
+        linear-gradient(180deg, var(--bg), #070a0e 70%);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{color:inherit; text-decoration: underline; text-underline-offset: 3px}
+    a:hover{color:var(--accent)}
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 16px 72px;
+    }
+
+    /* Header */
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding: 14px 2px 22px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .brand .site{
+      font-weight: 700;
+      letter-spacing:.2px;
+      font-size: 16px;
+      opacity:.95;
+    }
+    .brand .crumb{
+      color:var(--muted);
+      font-size: 13px;
+    }
+
+    .tools{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .pill strong{color:var(--text); font-weight:600}
+
+    .btn{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      padding: 9px 12px;
+      border-radius: 999px;
+      cursor:pointer;
+      font-size: 13px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{background: rgba(255,255,255,.07); border-color: rgba(125,211,252,.35)}
+    .btn:active{transform: translateY(1px)}
+
+    /* Layout */
+    .hero{
+      margin-top: 8px;
+      border:1px solid rgba(255,255,255,.06);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+    }
+
+    h1{
+      margin: 0 0 8px;
+      font-size: clamp(26px, 3.4vw, 38px);
+      letter-spacing: -0.02em;
+      line-height: 1.18;
+    }
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      color: var(--muted);
+      font-size: 13.5px;
+      margin-top: 10px;
+      align-items:center;
+    }
+    .dot{opacity:.6}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    @media (min-width: 960px){
+      .grid{
+        grid-template-columns: 280px 1fr;
+        align-items:start;
+      }
+    }
+
+    /* TOC */
+    .toc{
+      position: relative;
+      border:1px solid rgba(255,255,255,.06);
+      background: rgba(15,22,32,.6);
+      border-radius: var(--radius);
+      padding: 14px 14px 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+    }
+    @media (min-width: 960px){
+      .toc{ position: sticky; top: 14px; }
+    }
+    .toc h2{
+      font-size: 13px;
+      margin: 0 0 10px;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .toc a{
+      display:block;
+      padding: 9px 10px;
+      border-radius: 12px;
+      text-decoration:none;
+      color: var(--text);
+      border:1px solid transparent;
+      transition: background .15s ease, border-color .15s ease;
+      font-size: 14px;
+    }
+    .toc a:hover{
+      background: rgba(125,211,252,.08);
+      border-color: rgba(125,211,252,.25);
+    }
+    .toc .small{
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-top: 8px;
+      padding: 0 10px 6px;
+    }
+
+    /* Content */
+    .content{
+      border:1px solid rgba(255,255,255,.06);
+      background: rgba(15,22,32,.45);
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+    }
+    .section{
+      padding: 14px 8px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .section:last-child{border-bottom:none}
+
+    h3{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+      line-height:1.25;
+    }
+
+    p{margin: 10px 0; color: rgba(232,238,246,.92)}
+    ul{margin: 10px 0 0 18px; padding: 0}
+    li{margin: 8px 0; color: rgba(232,238,246,.92)}
+    .note{
+      border:1px solid rgba(125,211,252,.22);
+      background: rgba(125,211,252,.07);
+      padding: 12px 12px;
+      border-radius: 14px;
+      color: rgba(232,238,246,.92);
+      margin-top: 10px;
+    }
+    .kbd{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      padding: 2px 6px;
+      border:1px solid rgba(255,255,255,.15);
+      border-bottom-color: rgba(255,255,255,.08);
+      border-radius: 8px;
+      background: rgba(255,255,255,.04);
+      color: rgba(232,238,246,.92);
+      white-space:nowrap;
+    }
+
+    /* Print */
+    @media print{
+      body{ background:#fff; color:#111 }
+      .hero, .toc, .content{ box-shadow:none; background:#fff; border:1px solid #ddd }
+      .btn{ display:none }
+      a{ color:#111; text-decoration:none }
+      .meta{ color:#444 }
+      .toc{ position: static }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="site">iSure Myanmar</div>
+        <div class="crumb">isuremyanmar.com / terms-and-conditions</div>
+      </div>
+
+      <div class="tools">
+        <div class="pill"><strong>Last updated</strong><span class="dot">•</span><span>27 Feb 2026</span></div>
+        <button class="btn" onclick="window.print()" type="button">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <header class="hero">
+      <h1>Terms &amp; Conditions</h1>
+      <div class="meta">
+        <span>These Terms govern your use of iSure Myanmar’s website and related services.</span>
+      </div>
+      <div class="note" role="note" aria-label="Important note">
+        By accessing or using this website, you agree to these Terms. If you do not agree, please do not use the Services.
+      </div>
+    </header>
+
+    <main class="grid" aria-label="Terms & Conditions content">
+      <aside class="toc" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <a href="#acceptance">1. Acceptance of Terms</a>
+        <a href="#eligibility">2. Eligibility &amp; Account</a>
+        <a href="#use">3. Use of the Services</a>
+        <a href="#products">4. Product Information &amp; Availability</a>
+        <a href="#pricing">5. Pricing, Payments &amp; Promotions</a>
+        <a href="#orders">6. Orders &amp; Confirmation</a>
+        <a href="#delivery">7. Delivery / Pick-up</a>
+        <a href="#returns">8. Returns, Exchanges &amp; Refunds</a>
+        <a href="#warranty">9. Warranty &amp; After-Sales Support</a>
+        <a href="#tradein">10. Trade-In / Device Programs (If Applicable)</a>
+        <a href="#ip">11. Intellectual Property</a>
+        <a href="#usercontent">12. User Content (If Applicable)</a>
+        <a href="#thirdparty">13. Third-Party Links &amp; Services</a>
+        <a href="#privacy">14. Privacy</a>
+        <a href="#disclaimers">15. Disclaimers</a>
+        <a href="#liability">16. Limitation of Liability</a>
+        <a href="#indemnity">17. Indemnity</a>
+        <a href="#changes">18. Changes to Services or Terms</a>
+        <a href="#termination">19. Termination</a>
+        <a href="#law">20. Governing Law &amp; Dispute Resolution</a>
+        <a href="#contact">21. Contact</a>
+        <div class="small">
+          Tip: Use <span class="kbd">Ctrl</span> + <span class="kbd">F</span> (or <span class="kbd">⌘</span> + <span class="kbd">F</span>) to search.
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="section" id="acceptance">
+          <h3>1) Acceptance of Terms</h3>
+          <p>
+            These Terms &amp; Conditions (“Terms”) govern your access to and use of the iSure Myanmar website and any related pages, services,
+            content, and features (collectively, the “Services”) operated by iSure Myanmar (“iSure”, “we”, “us”, “our”).
+            By accessing or using the Services, you agree to be bound by these Terms.
+          </p>
+          <p>If you do not agree to these Terms, do not use the Services.</p>
+        </div>
+
+        <div class="section" id="eligibility">
+          <h3>2) Eligibility &amp; Account</h3>
+          <ul>
+            <li>You must be able to form a legally binding contract to use the Services.</li>
+            <li>If you create an account, you are responsible for keeping your login credentials secure and for all activities under your account.</li>
+            <li>You agree to provide accurate, current, and complete information and to update it when necessary.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="use">
+          <h3>3) Use of the Services</h3>
+          <p>You agree not to:</p>
+          <ul>
+            <li>use the Services for unlawful purposes;</li>
+            <li>attempt to gain unauthorized access to systems or data;</li>
+            <li>disrupt or interfere with the security or performance of the Services;</li>
+            <li>upload or transmit viruses or malicious code;</li>
+            <li>scrape, copy, or reproduce content except as allowed under these Terms or by law.</li>
+          </ul>
+          <p>We may suspend or terminate access if we believe you violate these Terms.</p>
+        </div>
+
+        <div class="section" id="products">
+          <h3>4) Product Information &amp; Availability</h3>
+          <ul>
+            <li>We try to ensure product details, pricing, images, and availability are accurate. However, mistakes can occur.</li>
+            <li>We may correct errors and update information at any time without notice (including after an order is placed).</li>
+            <li>Product availability may change without notice.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="pricing">
+          <h3>5) Pricing, Payments &amp; Promotions</h3>
+          <ul>
+            <li>Prices are displayed in <strong>MMK</strong> unless stated otherwise. Prices may change at any time.</li>
+            <li>Payment methods, fees, and requirements may vary depending on the product/service and your location.</li>
+            <li>
+              Promotional offers (including bundles, gifts, discounts, cashback, or “free” items) are subject to limited stock and time,
+              eligibility conditions, verification checks, and any stated per-customer/per-transaction limits.
+            </li>
+            <li>We reserve the right to refuse or cancel orders that appear to be fraudulent or abusive of promotions.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="orders">
+          <h3>6) Orders &amp; Confirmation</h3>
+          <ul>
+            <li>Placing an order is an offer to purchase.</li>
+            <li>An order is not confirmed until we send an official confirmation (e.g., email/SMS/receipt) or otherwise accept the order.</li>
+            <li>
+              We may refuse or cancel an order for reasons including product unavailability, pricing/listing errors,
+              failed payment/verification, suspected fraud, or shipping/address restrictions.
+            </li>
+          </ul>
+          <p>If we cancel after payment is received, we will follow our refund process (see Section 8).</p>
+        </div>
+
+        <div class="section" id="delivery">
+          <h3>7) Delivery / Pick-up</h3>
+          <ul>
+            <li>Delivery times are estimates and may vary due to logistics, weather, carrier delays, or events outside our control.</li>
+            <li>You are responsible for providing a correct delivery address and reachable contact number.</li>
+            <li>
+              Risk of loss typically transfers upon delivery to the address you provide (or when collected at pick-up),
+              unless otherwise required by law.
+            </li>
+            <li>For pick-up orders, you may need to present identification and/or order confirmation.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="returns">
+          <h3>8) Returns, Exchanges &amp; Refunds</h3>
+          <p>Return/refund terms may depend on product category, condition, and applicable laws. Unless stated otherwise:</p>
+          <ul>
+            <li><strong>Change of mind</strong> returns may be restricted (especially for opened items, activated devices, software, digital goods, and certain accessories).</li>
+            <li>Returned items must be in original condition and packaging, with all accessories, manuals, and proof of purchase.</li>
+            <li>Refund methods and timing depend on your payment method and verification.</li>
+            <li>Shipping fees (if any) may be non-refundable unless the return is due to our error or a defective item.</li>
+          </ul>
+          <div class="note">
+            If you have a separate Return Policy page, add a link here and clarify which policy controls in case of conflict.
+          </div>
+        </div>
+
+        <div class="section" id="warranty">
+          <h3>9) Warranty &amp; After-Sales Support</h3>
+          <ul>
+            <li>Warranty coverage (duration, conditions, and service procedures) may vary by brand, product, and region.</li>
+            <li>
+              Warranty may be void if the product is damaged by misuse, accidents, liquids, unauthorized modifications,
+              or unauthorized repairs; or if serial numbers are altered/removed.
+            </li>
+            <li>For warranty claims, you may be required to provide proof of purchase and the product’s serial number/IMEI.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="tradein">
+          <h3>10) Trade-In / Device Programs (If Applicable)</h3>
+          <ul>
+            <li>Quotes are estimates until inspection and verification.</li>
+            <li>Final value depends on device condition, authenticity, ownership status, activation lock status, and eligibility checks.</li>
+            <li>We may reject devices that are reported lost/stolen, locked, counterfeit, or fail diagnostics.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="ip">
+          <h3>11) Intellectual Property</h3>
+          <p>
+            All content on the Services (logos, text, graphics, images, UI, and software) is owned by iSure or its licensors and is protected
+            by intellectual property laws. You may not copy, modify, distribute, or create derivative works unless we explicitly allow it.
+          </p>
+        </div>
+
+        <div class="section" id="usercontent">
+          <h3>12) User Content (If Applicable)</h3>
+          <p>If you submit content (reviews, comments, photos, etc.):</p>
+          <ul>
+            <li>You grant iSure a worldwide, royalty-free license to use, reproduce, display, and distribute that content for operating and promoting the Services.</li>
+            <li>You confirm you have the rights to share it and it does not violate any law or third-party rights.</li>
+            <li>We may remove content at our discretion.</li>
+          </ul>
+        </div>
+
+        <div class="section" id="thirdparty">
+          <h3>13) Third-Party Links &amp; Services</h3>
+          <p>
+            The Services may link to third-party websites or services (payment providers, social networks, couriers, etc.).
+            We are not responsible for third-party content, policies, or practices. Your use of third-party services is at your own risk.
+          </p>
+        </div>
+
+        <div class="section" id="privacy">
+          <h3>14) Privacy</h3>
+          <p>
+            Your use of the Services is also governed by our <strong>Privacy Policy</strong>. Please review it to understand how we collect,
+            use, and protect your information.
+          </p>
+          <p>Privacy Policy: <a href="/privacy-policy">/privacy-policy</a> <span class="dot">•</span> (update this link if your URL differs)</p>
+        </div>
+
+        <div class="section" id="disclaimers">
+          <h3>15) Disclaimers</h3>
+          <ul>
+            <li>The Services are provided on an “as is” and “as available” basis.</li>
+            <li>We do not guarantee the Services will be uninterrupted, error-free, or free of harmful components.</li>
+            <li>Product images are for illustration; actual appearance may vary.</li>
+          </ul>
+          <p>Nothing in these Terms limits rights that cannot be limited under applicable law.</p>
+        </div>
+
+        <div class="section" id="liability">
+          <h3>16) Limitation of Liability</h3>
+          <p>
+            To the maximum extent permitted by law, iSure will not be liable for any indirect, incidental, special, consequential,
+            or punitive damages, or loss of profits, revenue, data, or goodwill arising from your use of the Services.
+          </p>
+          <p>
+            If liability cannot be excluded, our total liability will be limited to the amount you paid to iSure for the relevant order/service
+            (if any), unless the law requires otherwise.
+          </p>
+        </div>
+
+        <div class="section" id="indemnity">
+          <h3>17) Indemnity</h3>
+          <p>
+            You agree to indemnify and hold harmless iSure and its directors, employees, and partners from any claims, damages, liabilities,
+            and expenses (including legal fees) arising from your violation of these Terms or misuse of the Services.
+          </p>
+        </div>
+
+        <div class="section" id="changes">
+          <h3>18) Changes to Services or Terms</h3>
+          <p>
+            We may update these Terms from time to time. Changes take effect when posted on this page with a revised “Last updated” date.
+            Your continued use after changes means you accept the updated Terms.
+          </p>
+        </div>
+
+        <div class="section" id="termination">
+          <h3>19) Termination</h3>
+          <p>
+            We may suspend or terminate your access to the Services at any time if we reasonably believe you violated these Terms or if required by law.
+            Sections that should survive termination (e.g., Intellectual Property, Disclaimers, Limitation of Liability) will remain in effect.
+          </p>
+        </div>
+
+        <div class="section" id="law">
+          <h3>20) Governing Law &amp; Dispute Resolution</h3>
+          <p>
+            These Terms are governed by the laws of <strong>[Myanmar / your chosen jurisdiction]</strong>, without regard to conflict-of-law rules.
+            Any dispute arising out of or related to these Terms will be resolved in the courts of <strong>[City, Country]</strong>,
+            unless applicable law requires a different process.
+          </p>
+        </div>
+
+        <div class="section" id="contact">
+          <h3>21) Contact</h3>
+          <p>If you have questions about these Terms, contact us:</p>
+          <ul>
+            <li><strong>iSure Myanmar</strong></li>
+            <li>Email: <a href="mailto:support@isuremyanmar.com">support@isuremyanmar.com</a> (change if needed)</li>
+            <li>Phone: <strong>[your phone number]</strong></li>
+            <li>Address: <strong>[your address]</strong></li>
+          </ul>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>
